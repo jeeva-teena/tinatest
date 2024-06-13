@@ -6,11 +6,12 @@ import Author from "./collection/author";
 import Page from "./collection/page";
 
 const config = defineConfig({
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
-  branch:
-    process.env.NEXT_PUBLIC_TINA_BRANCH! || // custom branch env override
-    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF! || // Vercel branch env
-    process.env.HEAD!, // Netlify branch env
+  clientId: process.env.TINA_PUBLIC_CLIENT_ID!,
+  branch: process.env.TINA_BRANCH!,
+  // branch:
+  //   process.env.NEXT_PUBLIC_TINA_BRANCH! || // custom branch env override
+  //   process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF! || // Vercel branch env
+  //   process.env.HEAD!, // Netlify branch env
   token: process.env.TINA_TOKEN!,
   media: {
     // If you wanted cloudinary do this
