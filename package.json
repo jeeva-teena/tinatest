@@ -25,9 +25,11 @@
     "postcss-nesting": "^10.1.0"
   },
   "dependencies": {
+    "@esbuild/win32-x64": "^0.21.5",
     "@headlessui/react": "1.7.5",
     "@tailwindcss/typography": "^0.5.8",
     "date-fns": "^2.23.0",
+    "dotenv": "^16.4.5",
     "next": "^13.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
